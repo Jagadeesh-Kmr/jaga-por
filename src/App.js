@@ -17,7 +17,7 @@ const App = () => {
   const [contactData, setContactData] = useState([])
 
   const setContact = contactDetails => {
-    setContactData(contactDetails)
+    setContactData({contactDetails})
   }
 
   return (

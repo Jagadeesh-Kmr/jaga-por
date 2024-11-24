@@ -1,0 +1,43 @@
+.rq-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.rq-bg-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-tick-img {
+  width: 80px;
+}
+
+.rq-h {
+  font-family: 'Roboto';
+  font-size: 44px;
+}
+
+.person-name {
+  font-family: fantasy;
+  font-size: 44px;
+}
+
+@media screen and (max-width: 767px) {
+  .green-tick-img {
+    width: 50px;
+  }
+
+  .rq-h {
+    font-size: 24px;
+  }
+
+  .person-name {
+    font-size: 24px;
+  }
+}

@@ -7,20 +7,13 @@
   background-color: #0a2442;
   font-family: 'Roboto';
   color: #ffffff;
+  padding-bottom: 80px;
   font-size: 20px;
-  padding-top: 100px;
-  padding-bottom: 60px;
 }
 
-.price-btn {
-  color: #ffffff;
-  background-color: rgb(78, 129, 158);
-  font-size: 20px;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  padding: 10px 25px 10px 25px;
+.contact-h {
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .person-details-bg-div {
@@ -66,7 +59,13 @@
 
 @media screen and (max-width: 768px) {
   .contact-main-div {
+    text-align: center;
     width: 100%;
+  }
+
+  .contact-h {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   .person-details-bg-div {
@@ -76,6 +75,7 @@
     align-items: center;
     width: 100%;
     padding-top: 20px;
+    padding-left: 0px;
     background-color: transparent;
   }
 

@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 import Header from '../Header'
-import RequestSuccess from '../RequestSuccess'
+import MsgSuccess from '../MsgSuccess'
 import CartContact from '../../context/CreateContact'
 
 import './index.css'
@@ -50,7 +50,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="p-d-input"
-                  placeholder="Gender"
+                  placeholder="Message"
                   onChange={e => setGender(e.target.value)}
                 />
               </div>
@@ -64,6 +64,7 @@ const Contact = () => {
             <div className="contact-main-div">
               {ContactLen ? (
                 <>
+                  <h1 className="contact-h">Contact Form</h1>
                   {renderPersonDetails()}
                   <div className="contact-btn-div">
                     <button
@@ -76,7 +77,7 @@ const Contact = () => {
                   </div>
                 </>
               ) : (
-                <RequestSuccess />
+                <MsgSuccess />
               )}
             </div>
           </>
