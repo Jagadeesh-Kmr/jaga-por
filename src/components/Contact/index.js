@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 import Header from '../Header'
+import RequestSuccess from '../RequestSuccess'
 import CartContact from '../../context/CreateContact'
 
 import './index.css'
@@ -20,7 +21,7 @@ const Contact = () => {
           addContactData({personName, email, phone, gender})
         }
 
-        console.log(contactData)
+        const ContactLen = contactData.length === 0
 
         const renderPersonDetails = () => (
           <>
@@ -61,16 +62,22 @@ const Contact = () => {
           <>
             <Header />
             <div className="contact-main-div">
-              {renderPersonDetails()}
-              <div className="contact-btn-div">
-                <button
-                  type="button"
-                  className="contact-btn"
-                  onClick={onClickPayNow}
-                >
-                  Contact
-                </button>
-              </div>
+              {ContactLen ? (
+                <>
+                  {renderPersonDetails()}
+                  <div className="contact-btn-div">
+                    <button
+                      type="button"
+                      className="contact-btn"
+                      onClick={onClickPayNow}
+                    >
+                      Contact
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <RequestSuccess />
+              )}
             </div>
           </>
         )
