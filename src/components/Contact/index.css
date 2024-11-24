@@ -1,0 +1,95 @@
+.contact-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0a2442;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.price-btn {
+  color: #ffffff;
+  background-color: rgb(78, 129, 158);
+  font-size: 20px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
+
+.person-details-bg-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4e0e4;
+  padding-left: 90px;
+  width: 900px;
+  height: 280px;
+  margin-bottom: 40px;
+}
+
+.p-d-input {
+  border: 0;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border-radius: 8px;
+  color: #475569;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-btn-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-btn {
+  color: rgb(78, 129, 158);
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid rgb(78, 129, 158);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main-div {
+    width: 100%;
+  }
+
+  .person-details-bg-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+
+  .contact-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .p-d-input {
+    width: 200px;
+    font-size: 15px;
+    border: 1px solid #475569;
+  }
+}

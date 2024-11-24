@@ -1,0 +1,129 @@
+.certifications-bg-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a2442;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 20px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.cert-h1 {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.cert-hr-line {
+  width: 1470px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.cert-hading-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1460px;
+}
+
+.tp-cv-p {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  text-decoration: solid;
+}
+
+.cert-link-element {
+  font-size: 20px;
+  color: #75a6e6;
+}
+
+.cert-name {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .key-points-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .key-points-ul {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 100px;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+
+  .key-points-li {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certifications-bg-div {
+    width: 100%;
+  }
+
+  .cert-h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .cert-hr-line {
+    width: 290px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .cert-hading-div {
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cert-name {
+    font-size: 13px;
+    font-weight: 500;
+    width: 100px;
+  }
+
+  .key-points-ul {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cert-link-element {
+    font-size: 12px;
+  }
+
+  .key-points-li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .tp-cv-p {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}

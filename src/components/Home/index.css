@@ -1,0 +1,45 @@
+.home-main-div {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://framerusercontent.com/images/RbEcyXtkBsmgN1wPa5kCXpwZLk.jpg');
+}
+
+.home-name-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .home-main-div {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .home-mobile-div {
+    display: none;
+  }
+}
+
+.home-name {
+  font-family: 'Roboto';
+  margin-bottom: 0px;
+}
+
+.designation {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 0px;
+  margin-top: 5px;
+}
+
+.frontend-name {
+  color: rgb(105, 218, 218);
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: underline;
+}
